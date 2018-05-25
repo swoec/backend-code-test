@@ -27,3 +27,9 @@ The function argument is of the following structure:
 
 (Recommended time: 2 - 3 hours)
 
+
+## Submission
+
+Please fork this repositry and add your solution there, then email us a link to your forked repository.
+
+Have fun and good luck! 
