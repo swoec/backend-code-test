@@ -22,3 +22,7 @@ Your goals are:
  - to write your own library for drawing shapes around that single function
  - keep in mind that the library is supposed to be used later by other developers in many different projects for many years
  - the first version of the library needs to be able to draw following shapes: Square, Rectangle
+
+
+Recommended time: 2 - 3 hours
+
