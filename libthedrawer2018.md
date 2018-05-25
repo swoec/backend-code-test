@@ -1,5 +1,6 @@
 # libthedrawer2018-0.6.4
 
+## Task description
 You are given a 3rd party vendor library called `libthedrawer2018-0.6.4`. Its purpose is to render images in a proprietary graphical format.
 
 
@@ -18,11 +19,11 @@ The function argument is of the following structure:
  - 2nd level is the list of 2 points for each line on the canvas
  - 3rd level is the list of coordinates for each point on the 2D canvas
 
-Your goals are:
+## Your goals are
  - to write your own library for drawing shapes around that single function
  - keep in mind that the library is supposed to be used later by other developers in many different projects for many years
  - the first version of the library needs to be able to draw following shapes: Square, Rectangle
 
 
-Recommended time: 2 - 3 hours
+(Recommended time: 2 - 3 hours)
 
