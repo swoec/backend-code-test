@@ -11,5 +11,8 @@ public class DrawerFactory {
 		return factory.createDrawer();
 		
 	}
-
+	public static Drawer getDrawerwithnopara(DrawerAbstractFactory factory) {
+		return factory.createDrawerWithoutinit();
+		
+	}
 }

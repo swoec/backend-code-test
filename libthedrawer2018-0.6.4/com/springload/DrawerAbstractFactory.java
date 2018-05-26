@@ -7,5 +7,6 @@ package com.springload;
  */
 public interface DrawerAbstractFactory {
 	public Drawer createDrawer();
+	public Drawer createDrawerWithoutinit();
 
 }

@@ -26,4 +26,10 @@ public class SquareFactory implements DrawerAbstractFactory {
 		return new SquareDrawer(this.x,this.y,this.width);
 	}
 
+	@Override
+	public Drawer createDrawerWithoutinit() {
+		// TODO Auto-generated method stub
+		return new SquareDrawer();
+	}
+
 }

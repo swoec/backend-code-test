@@ -29,11 +29,12 @@ public class SquareDrawer extends Drawer {
 	
 	@Override
 	public int draw() {
-		System.out.println("square---");	
-		
+		System.out.println("square---");		
 		return super.drawline(this.lines);	
 				
 	}
+	
+	
 	/*
 	 * @funtion generate
 	 * @parameter position of left up corner (x,y)
@@ -63,11 +64,7 @@ public class SquareDrawer extends Drawer {
 		return lines;
 	}
 
-	@Override
-	public int draw(int[][][] graph) {
-		// TODO Auto-generated method stub
-		return super.drawline(graph);
-	}
+	
 	
 	
 	

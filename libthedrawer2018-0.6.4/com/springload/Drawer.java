@@ -12,8 +12,7 @@ public abstract class Drawer {
 	
 	//to manipulate the date before drawline and then draw 
 	public abstract int draw();
-	public abstract int draw(int [][][] graph);
-	
+		
 	// implement the interface
 	public int drawline(int [][][] gre) {
 		//simulate the library interface

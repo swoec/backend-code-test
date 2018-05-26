@@ -19,9 +19,11 @@ public class TestDrawer {
 		RectangleDrawer are = new RectangleDrawer(40,40,20,10);
 		System.out.println(are.draw());	
 		
+		
 		//position of left up corner and width
 		Drawer squere = DrawerFactory.getDrawer(new SquareFactory(20,20,10));
 		System.out.println(squere.draw());
+		
 		// input the parameter directly
 		int[][] points1 = {{20,10},{10,10}};
 		int[][] points2 = {{10,10},{10,20}};
@@ -31,12 +33,15 @@ public class TestDrawer {
 				points2,
 				points3,
 	            points4
-		};		
-		System.out.println(squere.draw(gre));
+		};
+		Drawer squarewithnopara = DrawerFactory.getDrawerwithnopara(new SquareFactory());
+		System.out.println(squarewithnopara.drawline(gre));
+		
 		
 		//position of left up corner and width length
 		Drawer rectangle = DrawerFactory.getDrawer(new RectangleFactory(40,40,20,10));
 		System.out.println(rectangle.draw());
+		
 		
 		//input the parameter directly
 		int[][] points5 = {{30,10},{10,10}};
@@ -47,7 +52,9 @@ public class TestDrawer {
 				points6,
 				points7,
 	            points8
-		};		
-		System.out.println(rectangle.draw(gra));
+		};
+		Drawer rectanglewithnopara = DrawerFactory.getDrawerwithnopara(new RectangleFactory());
+		System.out.println(rectanglewithnopara.drawline(gra));
+		
 	}
 }

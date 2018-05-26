@@ -29,6 +29,12 @@ public class RectangleFactory implements DrawerAbstractFactory {
 		// TODO Auto-generated method stub
 		return new RectangleDrawer(this.x,this.y,this.width,this.length);
 	}
+
+	@Override
+	public Drawer createDrawerWithoutinit() {
+		// TODO Auto-generated method stub
+		return new RectangleDrawer();
+	}
 	
 	
 

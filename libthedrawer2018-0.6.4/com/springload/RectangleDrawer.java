@@ -38,6 +38,7 @@ public class RectangleDrawer extends Drawer {
 		return super.drawline(this.lines);
 				
 	}
+	
 	/*
 	 * @funtion generate
 	 * @parameter position of left up corner (x,y)
@@ -56,9 +57,8 @@ public class RectangleDrawer extends Drawer {
 		for(int i=0;i<lines.length;i++) {
 			for(int j=0;j<lines[0].length;j++) {
 				for(int k=0;k<lines[0][0].length;k++) {
-					System.out.println(lines[i][j][k]);
-				}
-					
+					System.out.print(lines[i][j][k]);
+				}					
 			}
 		}
 		
@@ -66,11 +66,6 @@ public class RectangleDrawer extends Drawer {
 	}
 	
 
-	@Override
-	public int draw(int[][][] graph) {
-		// TODO Auto-generated method stub
-		return super.drawline(graph);
-	}
 	
 
 }
