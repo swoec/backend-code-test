@@ -1,0 +1,76 @@
+package com.springload;
+
+/**
+ * @author Alex Wang
+ * @version 1.0
+ * @
+ */
+public class RectangleDrawer extends Drawer {
+	
+	int [][][] lines;
+	int x = 0;       //x position of left up corner
+	int y = 0;       // y position of left up corner
+	int width = 0;   // width of the rectangele
+	int length = 0;  // length of the rectangle
+	
+	public RectangleDrawer(){
+		
+	}
+	
+	public RectangleDrawer(int[][][]lines) {
+		this.lines=lines;
+	}
+	
+	public RectangleDrawer(int x,int y,int width,int length) {
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.length = length;
+		this.lines = generate(x,y,width,length);
+		
+	}
+
+	@Override
+	public int draw() {
+		// TODO Auto-generated method stub
+		System.out.println("---rectangele--");
+		
+		return super.drawline(this.lines);
+				
+	}
+	/*
+	 * @funtion generate
+	 * @parameter position of left up corner (x,y)
+	 * @parameter width length of rectangle
+	 * @to generate the three dimension array
+	 */ 
+	public int[][][]generate(int x,int y,int width,int length){
+		System.out.println("---generate---rectangele---");
+		int [][] points1 = {{x,y},{x,y-width}};
+		int [][] points2 = {{x,y},{x+length,y}};
+		int [][] points3 = {{x,y-width},{x+length,y-width}};
+		int [][] points4 = {{x+length,y-width},{x+length,y}};
+		
+		int [][][]lines = {points1,points2,points3,points4};
+		
+		for(int i=0;i<lines.length;i++) {
+			for(int j=0;j<lines[0].length;j++) {
+				for(int k=0;k<lines[0][0].length;k++) {
+					System.out.println(lines[i][j][k]);
+				}
+					
+			}
+		}
+		
+		return lines;
+	}
+	
+
+	@Override
+	public int draw(int[][][] graph) {
+		// TODO Auto-generated method stub
+		return super.drawline(graph);
+	}
+	
+
+}
