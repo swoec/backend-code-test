@@ -1,12 +1,25 @@
+/**  
+
+* <p>Title: Util.java</p>  
+
+* <p>Description: </p>  
+
+* <p>Copyright: Copyright (c) 2018</p>  
+
+* <p>Company:Alex Wang </p>  
+
+* @author Alex Wang  
+
+* @date 27/05/2018  
+
+* @version 1.0  
+
+*/ 
 package com.springload;
 
 import java.util.Arrays;
 
-/**
- * @author Alex Wang
- * @version 1.0
- * @
- */
+
 public class Util {
 	
 	public static <T> T[] expandCapacity(T[] datas,int newLen){   
