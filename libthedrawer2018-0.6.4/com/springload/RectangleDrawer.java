@@ -52,12 +52,16 @@ public class RectangleDrawer extends Drawer {
 				
 	}
 	
-	/*
-	 * @funtion generate
-	 * @parameter position of left up corner (x,y)
-	 * @parameter width length of rectangle
-	 * @to generate the three dimension array
-	 */ 
+
+	/**  
+	 * <p>Title: generate</p>  
+	 * <p>Description: </p>  
+	 * @param x x axis of position of left up corner
+	 * @param y y axis of position of left up corner
+	 * @param width of rectangle
+	 * @param length of rectangle
+	 * @return  
+	 */  
 	public int[][][]generate(int x,int y,int width,int length){
 		System.out.println("---generate---rectangele---");
 		int [][] points1 = {{x,y},{x,y-width}};

@@ -32,7 +32,7 @@ public class SquareFactory implements DrawerAbstractFactory {
 		this.y = y;
 		this.width = width;
 	}
-	//get the square drawer
+	
 	@Override
 	public Drawer createDrawer() {
 		// TODO Auto-generated method stub

@@ -48,12 +48,14 @@ public class SquareDrawer extends Drawer {
 	}
 	
 	
-	/*
-	 * @funtion generate
-	 * @parameter position of left up corner (x,y)
-	 * @parameter width  of square
-	 * @to generate the three dimension array
-	 */ 
+	/**  
+	 * <p>Title: generate</p>  
+	 * <p>Description: </p>  
+	 * @param x x axis of position of left up corner
+	 * @param y y axis of position of left up corner
+	 * @param width of square
+	 * @return  
+	 */  
 
 	public int[][][]generate(int x,int y,int width){
 		

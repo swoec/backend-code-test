@@ -20,6 +20,12 @@ package com.springload;
 
 public class DrawerFactory {
 	
+	/**  
+	 * <p>Title: getDrawer</p>  
+	 * <p>Description: </p>  
+	 * @param DrawerAbstractFactory factory
+	 * @return  Drawer
+	 */  
 	public static Drawer getDrawer(DrawerAbstractFactory factory) {
 		return factory.createDrawer();
 		

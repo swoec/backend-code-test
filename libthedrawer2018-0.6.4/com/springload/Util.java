@@ -22,6 +22,14 @@ import java.util.Arrays;
 
 public class Util {
 	
+	
+	/**  
+	 * <p>Title: expandCapacity</p>  
+	 * <p>Description: </p>  
+	 * @param datas
+	 * @param newLen
+	 * @return  
+	 */  
 	public static <T> T[] expandCapacity(T[] datas,int newLen){   
 	    //not negetive value  
 	    newLen = newLen < 0 ? 0 :newLen;   

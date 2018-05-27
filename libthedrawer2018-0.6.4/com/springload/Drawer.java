@@ -23,17 +23,34 @@ import java.util.ArrayList;
 public abstract class Drawer {
 		
 	
-	//to manipulate the date before drawline and then draw 
+	
+	/**  
+	 * <p>Title: draw</p>  
+	 * <p>Description: </p>  
+	 * @return  id of picture
+	 */  
 	public abstract int draw();
 		
-	// implement the interface
+	
+	/**  
+	 * <p>Title: drawline</p>  
+	 * <p>Description: </p>  
+	 * @param int [][][] 
+	 * @return  id of picture
+	 */  
 	public int drawline(int [][][] gre) {
 		//simulate the library interface
 		return SimulateOutsideLibrary.draw_lines(gre);
 		
 	}
 	
-    // get all points
+    
+	/**  
+	 * <p>Title: getPoints</p>  
+	 * <p>Description: </p>  
+	 * @param int [][][]
+	 * @return  all positons of points
+	 */  
 	public ArrayList<int[][]> getPoints(int [][][]lines) {
 		
 		ArrayList<int[][]> pointslist = new ArrayList<int[][]>();
@@ -43,7 +60,13 @@ public abstract class Drawer {
 		return pointslist;
 	}	
 	
-    // get all points coordinates
+   
+	/**  
+	 * <p>Title: getCoordinates</p>  
+	 * <p>Description: </p>  
+	 * @param int [][][]
+	 * @return  coordinates of points
+	 */  
 	public ArrayList<int[]> getCoordinates(int [][][]lines) {
 		
 		ArrayList<int[]> coordianteslist = new ArrayList<int[]>();
